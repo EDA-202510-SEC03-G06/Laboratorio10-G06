@@ -33,7 +33,7 @@ def get_first_priority(my_heap):
 
 def insert(my_heap, key, value):
     my_heap['size'] += 1
-    my_heap['elements'].append({'key': key, 'value': value})
+    lt.add_last(my_heap['elements'],({'key': key, 'value': value}))
     swim(my_heap, my_heap['size'])
 
 
